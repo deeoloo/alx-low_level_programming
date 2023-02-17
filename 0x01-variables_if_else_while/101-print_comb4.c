@@ -11,11 +11,11 @@ int main(void)
 	int ten;
 	int hundred;
 
-	for (hundred = '0'; hundred <= '9'; hundred++) /hundreds place/
+	for (hundred = '0'; hundred <= '9'; hundred++) /*hundreds place*/
 	{
-		for (ten = (hundred + 1); ten <= '9'; ten++) /tens=100s+1/
+		for (ten = (hundred + 1); ten <= '9'; ten++) /*tens=100s+1*/
 		{
-			for (one = (ten + 1); one <= '9'; one++) /ones/
+			for (one = (ten + 1); one <= '9'; one++) /*ones*/
 			{
 				putchar(hundred);
 				putchar(ten);
@@ -28,6 +28,7 @@ int main(void)
 			}
 		}
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+
+	return (0);
 }
